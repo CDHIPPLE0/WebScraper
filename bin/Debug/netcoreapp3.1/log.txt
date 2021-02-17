@@ -18,3 +18,8 @@
 2021-02-17 16:55:27.496 -06:00 [INF] Run number 2 
 2021-02-17 16:55:27.496 -06:00 [INF] Run number 3 
 2021-02-17 16:55:27.496 -06:00 [INF] Run number 4 
+2021-02-17 17:48:28.588 -06:00 [INF] Application starting
+2021-02-17 17:55:33.649 -06:00 [INF] Application starting
+2021-02-17 17:56:56.465 -06:00 [INF] Application starting
+2021-02-17 17:57:13.578 -06:00 [INF] Application starting
+2021-02-17 17:57:57.043 -06:00 [INF] Application starting

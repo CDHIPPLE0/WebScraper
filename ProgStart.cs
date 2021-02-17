@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System;
 
 namespace ScraperOne
 {
@@ -16,10 +17,15 @@ namespace ScraperOne
 
         public void Run()
         {
-            for (int i = 0; i < _config.GetValue<int>("LoopTimes"); i++)
+            Console.WriteLine("Enter your key terms seperated by commas:");
+            string keyTerms = Console.ReadLine();
+            string[] searchTermsList = keyTerms.Split('.', ',');
+            foreach (var substring in searchTermsList)
             {
-                _log.LogInformation("Run number {runNumber} ", i);
+            Console.WriteLine(substring);
+
             }
+            string wait = Console.ReadLine();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace ScraperOne
             var host = Host.CreateDefaultBuilder() //loads IConfiguration from, DOTNET_, "appsettings.json"
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddTransient<IProgStart, ProgStart>(); 
+                    services.AddTransient<IProgStart, ProgStart>(); //
                 })
                 .UseSerilog()
                 .Build();
