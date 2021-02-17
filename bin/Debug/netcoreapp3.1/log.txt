@@ -1,0 +1,20 @@
+2021-02-17 16:47:13.397 -06:00 [INF] Application starting
+2021-02-17 16:51:24.616 -06:00 [INF] Application starting
+2021-02-17 16:53:22.772 -06:00 [INF] Application starting
+2021-02-17 16:53:23.024 -06:00 [INF] Run number 0 
+2021-02-17 16:53:23.027 -06:00 [INF] Run number 1 
+2021-02-17 16:53:23.027 -06:00 [INF] Run number 2 
+2021-02-17 16:53:23.027 -06:00 [INF] Run number 3 
+2021-02-17 16:53:23.027 -06:00 [INF] Run number 4 
+2021-02-17 16:54:02.139 -06:00 [INF] Application starting
+2021-02-17 16:54:02.426 -06:00 [INF] Run number 0 
+2021-02-17 16:54:02.432 -06:00 [INF] Run number 1 
+2021-02-17 16:54:02.432 -06:00 [INF] Run number 2 
+2021-02-17 16:54:02.432 -06:00 [INF] Run number 3 
+2021-02-17 16:54:02.432 -06:00 [INF] Run number 4 
+2021-02-17 16:55:27.219 -06:00 [INF] Application starting
+2021-02-17 16:55:27.492 -06:00 [INF] Run number 0 
+2021-02-17 16:55:27.496 -06:00 [INF] Run number 1 
+2021-02-17 16:55:27.496 -06:00 [INF] Run number 2 
+2021-02-17 16:55:27.496 -06:00 [INF] Run number 3 
+2021-02-17 16:55:27.496 -06:00 [INF] Run number 4 

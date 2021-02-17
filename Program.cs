@@ -2,6 +2,8 @@
 using System;
 using System.IO;
 using Serilog;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ScraperOne
 {
@@ -18,6 +20,24 @@ namespace ScraperOne
                 .Enrich.FromLogContext() //adds extra serilog features
                 .WriteTo.File("log.txt", rollOnFileSizeLimit: true) //writes to a log txt file with maximum 1gb by default
                 .CreateLogger();
+
+            Log.Logger.Information("Application starting"); //outputs to log when program runs!
+
+            var host = Host.CreateDefaultBuilder() //loads IConfiguration from, DOTNET_, "appsettings.json"
+                .ConfigureServices((context, services) =>
+                {
+                    services.AddTransient<IProgStart, ProgStart>(); 
+                })
+                .UseSerilog()
+                .Build();
+
+            var svc = ActivatorUtilities.CreateInstance<ProgStart>(host.Services);
+            svc.Run();
+        }
+
+        private static void ConfigureServices(Action<object, object> p)
+        {
+            throw new NotImplementedException();
         }
 
         static void BuildConfig(IConfigurationBuilder builder)
