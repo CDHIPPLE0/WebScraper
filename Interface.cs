@@ -37,8 +37,18 @@ namespace ScraperOne
             var thisListItem = query;
             var urlHit = thisListItem + startPath + searchString + endPath;
             var httpClient = new HttpClient();
-            var html = httpClient.GetStringAsync(urlHit);
-            Console.WriteLine(urlHit);
+                httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv: 85.0) Gecko / 20100101 Firefox / 85.0");
+                httpClient.DefaultRequestHeaders.Add("Connection", "keep-alive");
+                try
+                {
+                    var html = httpClient.GetStringAsync(urlHit);
+                    Console.WriteLine(html.Result);
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
             }
             string wait = Console.ReadLine();
         }
