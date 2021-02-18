@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "ScrapySharp": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Serilog.Extensions.Hosting": {
               "target": "Package",
               "version": "[4.0.0, )"

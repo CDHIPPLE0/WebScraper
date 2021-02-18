@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
+using System.Net.Http;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
@@ -13,8 +14,8 @@ namespace ScraperOne
         private readonly IConfiguration _config;
         private readonly string filePathToURL = Environment.CurrentDirectory;
         private readonly string startPath = @"/search/sss?query=";
-        private readonly string endPath = @"&purveyor-input=all";
-
+        private readonly string endPath = @"&purveyor-input=all&srchType=T";
+         
         public Interface(ILogger<Interface> log, IConfiguration config)
         {
             _log = log;
@@ -31,13 +32,15 @@ namespace ScraperOne
             var searchTermsList = Regex.Split(keyTerms, @"\s*,\s*");
             var searchString = string.Join('+',searchTermsList);
             string[] list = File.ReadAllLines(filePathToURL + @"\siteListCl.txt");
-            var urlHit = list[0] + startPath + searchString + endPath;
-            GetHtml("urlHit");
+            foreach (string query in list) 
+            {
+            var thisListItem = query;
+            var urlHit = thisListItem + startPath + searchString + endPath;
+            var httpClient = new HttpClient();
+            var html = httpClient.GetStringAsync(urlHit);
+            Console.WriteLine(urlHit);
+            }
             string wait = Console.ReadLine();
-        }
-        private void GetHtml(string v)
-        {
-            throw new NotImplementedException();
         }
 
     }
