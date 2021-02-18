@@ -1,6 +1,6 @@
 ﻿namespace ScraperOne
 {
-    public interface IProgStart
+    public interface IInterface
     {
         void Run();
     }
