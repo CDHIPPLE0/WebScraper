@@ -22,7 +22,7 @@ namespace ScraperOne
             _config = config;
         }
 
-        public void Run()
+        public async System.Threading.Tasks.Task Run()
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("{0}: Version{1} by {2}", _config.GetValue<string>("appName"), _config.GetValue<int>("version"), _config.GetValue<string>("Author"));
@@ -41,12 +41,13 @@ namespace ScraperOne
                 httpClient.DefaultRequestHeaders.Add("Connection", "keep-alive");
                 try
                 {
-                    var html = httpClient.GetStringAsync(urlHit);
-                    Console.WriteLine(html.Result);
+                    string responseBody = await httpClient.GetStringAsync(urlHit);
+                    Console.WriteLine(responseBody);
                 }
 
                 catch (Exception e)
                 {
+                    Console.WriteLine("exception caught!!");
                     Console.WriteLine(e);
                 }
             }

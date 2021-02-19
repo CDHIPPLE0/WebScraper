@@ -9,7 +9,7 @@ namespace ScraperOne
 {
     class Program
     {
-        static void Main(string[] args)
+        static async System.Threading.Tasks.Task Main(string[] args)
         {
             var builder = new ConfigurationBuilder(); //creates new instance of the IConfigurationBuilder in BuildConfig
 
@@ -32,7 +32,7 @@ namespace ScraperOne
                 .Build();
 
             var svc = ActivatorUtilities.CreateInstance<Interface>(host.Services);
-            svc.Run();
+           await svc.Run();
         }
 
         private static void ConfigureServices(Action<object, object> p)

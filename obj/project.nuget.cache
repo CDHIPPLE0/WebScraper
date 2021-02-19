@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cJCoyMDsG82iksAc2accI9LMsEUxKappCjwdXHt8/Sqi+Bq20Bl1DMCKZGM6m38L2zls0ws70sYuTNZRuwpE4A==",
+  "dgSpecHash": "9/JOlnGyvZGXptSS6pFIa+Z9rnRBMVpltCkuSMPKa5f2jGTspq4kYCxcXXJSh0tIGcvLKTkE4HDiW2OxuyrSLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\clint\\source\\repos\\ScraperOne\\ScraperOne.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\clint\\.nuget\\packages\\htmlagilitypack\\1.11.30\\htmlagilitypack.1.11.30.nupkg.sha512",
     "C:\\Users\\clint\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\clint\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.4\\microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",
     "C:\\Users\\clint\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",

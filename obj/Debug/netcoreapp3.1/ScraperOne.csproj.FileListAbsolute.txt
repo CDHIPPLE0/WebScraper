@@ -57,3 +57,4 @@ C:\Users\clint\source\repos\ScraperOne\obj\Debug\netcoreapp3.1\ScraperOne.pdb
 C:\Users\clint\source\repos\ScraperOne\obj\Debug\netcoreapp3.1\ScraperOne.genruntimeconfig.cache
 C:\Users\clint\source\repos\ScraperOne\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\clint\source\repos\ScraperOne\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\clint\source\repos\ScraperOne\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll

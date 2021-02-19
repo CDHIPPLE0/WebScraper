@@ -2,6 +2,6 @@
 {
     public interface IInterface
     {
-        void Run();
+        System.Threading.Tasks.Task Run();
     }
 }
