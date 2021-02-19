@@ -41,6 +41,7 @@ namespace ScraperOne
                 httpClient.DefaultRequestHeaders.Add("Connection", "keep-alive");
                 try
                 {
+                    Console.WriteLine(urlHit);
                     string responseBody = await httpClient.GetStringAsync(urlHit);
                     Console.WriteLine(responseBody);
                 }

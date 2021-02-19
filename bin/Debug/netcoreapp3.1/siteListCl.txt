@@ -1,8 +1,8 @@
-http://annarbor.craigslist.org
-http://abilene.craigslist.org
-http://albuquerque.craigslist.org
-http://nesd.craigslist.org
-http://albanyga.craigslist.org
+https://annarbor.craigslist.org
+https://abilene.craigslist.org
+https://albuquerque.craigslist.org
+https://nesd.craigslist.org
+https://albanyga.craigslist.org
 http://cenla.craigslist.org
 http://athensga.craigslist.org
 http://albany.craigslist.org
